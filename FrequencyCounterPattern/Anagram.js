@@ -1,5 +1,6 @@
 // Check if 2 strings are Anagrams
 
+// Frequency Counter Pattern
 function anagram(first, second){
     if(first.length !== second.length){
         return false

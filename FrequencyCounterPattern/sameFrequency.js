@@ -1,5 +1,6 @@
 // Find out if the 2 numbers have same frequency of digits
 
+// Frequency Counter Pattern
 function sameFrequency(val1, val2){
     val1 = val1.toString();
     val2 = val2.toString();

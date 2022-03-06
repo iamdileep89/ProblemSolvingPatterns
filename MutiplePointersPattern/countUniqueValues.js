@@ -1,6 +1,8 @@
 // write a function which accepts sorted array and counts unique values
 // there can be negative numbers but are always sorted
 
+
+// Multiple Pointers Pattern
 function uniqueCounterValues(arr){
     if(arr.length == 0) return 0;
     let i = 0

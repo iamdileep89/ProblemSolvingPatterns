@@ -33,8 +33,7 @@ function areThereDuplicates(...args){
     return false
 }
 
-//one liner solutoon
-
+//one liner solution
 function areThereDuplicates(){
     return new Set(arguments).size !== arguments.length)
 }
