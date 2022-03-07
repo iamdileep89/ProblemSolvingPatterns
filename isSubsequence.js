@@ -20,4 +20,3 @@ function isSubsequence(str1, str2){
 }
 
 isSubsequence('hello', 'hello world') // true
-isSubsequence('sing', 'sting') // true

@@ -1,10 +1,4 @@
-// in this pattern we create a window which can either be an array or number
-// from one postion to another
-// depending on the certain condition, window either closes or increases
-// very useful to keep track of subset of data in arr/string
-
-
-function maxArraySum(arr, num){
+function minArraySum(arr, num){
     let maxSum = 0;
     let tempSum = 0;
     if(arr.length<num) return null
@@ -19,10 +13,10 @@ function maxArraySum(arr, num){
 
       // sum = sum + next element - first element of old set
         tempSum = tempSum + arr[i] - arr[i-num]
-        maxSum = Math.max(tempSum, maxSum)
+        maxSum = Math.min(tempSum, maxSum)
     }
     return maxSum;
 }
 
 
-maxArraySum([1,2,3,3,3,3,3,4,4,5], 3) //O(n)
+minArraySum([1,2,3,3,3,3,3,4,4,5], 3) //O(n)
