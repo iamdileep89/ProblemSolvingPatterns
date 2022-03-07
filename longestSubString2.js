@@ -1,3 +1,5 @@
+// Sliding Window Pattern -- Top companies repeated question
+
 function findLongestSubstring(str) {
   let longest = 0;
   let seen = {};
