@@ -23,7 +23,7 @@ function uniqueCounterValues(arr){
     return i+1
 }
 
-
+uniqueCounterValues([1, 1, 1, 2, 3, 3, 4, 4, 5, 6])
 
 // another approach using for loop
 function uniqueCounterValues(arr){
@@ -34,6 +34,7 @@ function uniqueCounterValues(arr){
             i++
             arr[i] = arr[j]
         }
+      console.log(arr)
     }
     return i+1
 }

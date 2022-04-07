@@ -15,6 +15,7 @@ function findLongestSubstring(str) {
     // store the index of the next char so as to not double count
     seen[char] = i + 1;
   }
+  console.log(longest)
   return longest;
 }
 

@@ -10,8 +10,9 @@ function sumZero(arr){
 
     while(left < right){ // left should be always less than right which is fail safe during 0 == 0
         let sum = arr[left]+arr[right]
-        console.log(arr[left], arr[right], sum)
+        console.log(arr[left], arr[right], left, right, sum)
         if(sum == 0){
+          // console.log([arr[left], arr[right]])
             return [arr[left], arr[right]]
         } else if(sum > 0){
             right--
@@ -21,5 +22,5 @@ function sumZero(arr){
     }
 }
 
-sumZero([-4, -3, -2, -1, 0, 1, 2, 5]) // [-2, 2]
+sumZero([-4, -3, -1, 0, 1, 2, 5]) // [-2, 2]
 

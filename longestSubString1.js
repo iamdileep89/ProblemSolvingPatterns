@@ -12,6 +12,7 @@ function maxLengthSubString(s){
         map[s[end]]=end
         max = Math.max(max, end-begin+1)
     }
+  console.log(max)
     return max
 
 }
